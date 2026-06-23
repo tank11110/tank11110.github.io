@@ -1,0 +1,75 @@
+.section {
+  margin-bottom: 2.5rem;
+}
+
+.label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--section-label-color);
+  letter-spacing: 2px;
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.name {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -2px;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.role {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: var(--accent);
+  letter-spacing: 0.5px;
+  margin-bottom: 14px;
+}
+
+.desc {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.75;
+  margin-bottom: 1.25rem;
+}
+
+.contactRow {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.contactItem {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.15s;
+}
+
+.contactItem:hover {
+  color: #7A4E1A;
+}
+
+.contactItem i {
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .name { font-size: 32px; }
+  .contactRow { flex-direction: column; gap: 0.6rem; }
+}

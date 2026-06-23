@@ -1,0 +1,143 @@
+.section {
+  margin-bottom: 2.5rem;
+}
+
+.label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--section-label-color);
+  letter-spacing: 2px;
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+/* Experience */
+.expItem {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 1.25rem;
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.expItem:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.expDate {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--text-date);
+  padding-top: 3px;
+  line-height: 1.6;
+}
+
+.expRole {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 3px;
+}
+
+.expCompany {
+  font-size: 13px;
+  color: var(--accent);
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.expDesc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* Skills */
+.skillGroup {
+  margin-bottom: 1rem;
+}
+
+.skillGroupLabel {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: #C0A888;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.skillGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.skillTag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  padding: 4px 11px;
+  border: 1px solid var(--border-card);
+  border-radius: 4px;
+  color: #6A5545;
+  background: var(--bg-card);
+  cursor: default;
+  transition: all 0.2s;
+  min-width: fit-content;
+}
+
+.skillTag:hover {
+  border-color: var(--skill-hover-border);
+  color: var(--skill-hover-text);
+  background: var(--skill-hover-bg);
+}
+
+/* Education */
+.eduItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.eduItem:last-child {
+  border-bottom: none;
+}
+
+.eduSchool {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 3px;
+}
+
+.eduDegree {
+  font-size: 13px;
+  color: var(--accent);
+}
+
+.eduYear {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--text-date);
+  padding-top: 2px;
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .expItem { grid-template-columns: 1fr; gap: 4px; }
+  .expDate { padding-top: 0; }
+}

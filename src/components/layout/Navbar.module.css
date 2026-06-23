@@ -1,0 +1,125 @@
+.nav {
+  background: var(--nav-bg);
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  height: 52px;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  user-select: none;
+}
+
+.tabs {
+  display: flex;
+}
+
+.tab {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: var(--nav-text);
+  padding: 0 1rem;
+  height: 52px;
+  display: inline-flex;
+  align-items: center;
+  border-bottom: 2px solid transparent;
+  transition: color 0.15s, border-color 0.15s;
+  white-space: nowrap;
+}
+
+.tab:hover { color: var(--nav-text-active); }
+
+.tab.active {
+  color: var(--nav-text-active);
+  font-weight: 600;
+  border-bottom-color: var(--nav-text-active);
+}
+
+.right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.iconBtn {
+  color: #4A2E0E;
+  display: inline-flex;
+  align-items: center;
+  font-size: 20px;
+  line-height: 1;
+  transition: color 0.15s;
+}
+
+.iconBtn:hover { color: var(--nav-text-active); }
+
+.gearWrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.gearBtn {
+  color: #4A2E0E;
+  display: inline-flex;
+  align-items: center;
+  font-size: 22px;
+  line-height: 1;
+  transition: color 0.15s;
+}
+
+.gearBtn:hover { color: var(--nav-text-active); }
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+}
+
+.panel {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  background: #fff;
+  border: 1px solid var(--border-card);
+  border-radius: 8px;
+  padding: 12px;
+  width: 160px;
+  box-shadow: 0 4px 16px rgba(42, 31, 20, 0.1);
+  z-index: 100;
+}
+
+.panelLabel {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--section-label-color);
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.langToggle {
+  display: flex;
+  gap: 6px;
+}
+
+.langOpt {
+  flex: 1;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  padding: 6px 0;
+  border-radius: 5px;
+  color: #9A7A5A;
+  transition: all 0.15s;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.langOpt:hover { color: var(--nav-text-active); }
+
+.langOpt.langActive {
+  background: var(--settings-lang-active);
+  color: #fff;
+  font-weight: 600;
+}
