@@ -1,0 +1,13 @@
+{
+  "experience": [
+    {
+      "period": "2024 — 2025",
+      "role": { "zh": "後端工程師", "en": "Backend Engineer" },
+      "company": { "zh": "阿波羅電力股份有限公司", "en": "Apollo Power Co., Ltd." },
+      "desc": {
+        "zh": "設計並實作 IoT 資料處理管道，引入 Kafka 緩衝層解決尖峰積壓，單機達 200 筆/秒、入庫延遲 1 秒內。建立 FastAPI Manager 支援多租戶自助管理，Schema 隔離同時支撐 10+ 租戶、數十台裝置接入。系統上線後穩定運行 2 週以上",
+        "en": "Designed and implemented an IoT data pipeline with Kafka buffering, achieving 200 records/sec with under 1s ingestion latency. Built a FastAPI Manager for multi-tenant self-service with schema isolation across 10+ tenants and dozens of devices. Stable in production for 2+ weeks after launch."
+      }
+    }
+  ]
+}

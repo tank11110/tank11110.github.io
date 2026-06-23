@@ -1,0 +1,9 @@
+{
+  "education": [
+    {
+      "school": { "zh": "東吳大學", "en": "Soochow University" },
+      "degree": { "zh": "資料管理學院 學士學位學程", "en": "Bachelor's Program, School of Data Management" },
+      "period": "2017 — 2023"
+    }
+  ]
+}

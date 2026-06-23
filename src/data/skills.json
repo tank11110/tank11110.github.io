@@ -1,0 +1,20 @@
+{
+  "skills": [
+    {
+      "group": "BACKEND",
+      "items": ["Python", "Flask", "FastAPI", "Node.js", "NestJS"]
+    },
+    {
+      "group": "DEVOPS / SRE",
+      "items": ["Docker", "Kubernetes", "Helm", "GitHub Actions", "ArgoCD", "Grafana", "Prometheus"]
+    },
+    {
+      "group": "CLOUD",
+      "items": ["GCP", "Vultr", "Terraform"]
+    },
+    {
+      "group": "FRONTEND",
+      "items": ["React", "Next.js"]
+    }
+  ]
+}

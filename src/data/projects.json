@@ -1,0 +1,14 @@
+{
+  "projects": [
+    {
+      "name": "MemoCacher",
+      "url": "https://memocacher.com/",
+      "urlLabel": "memocacher.com",
+      "desc": {
+        "zh": "以行動裝置為主的實體書收藏管理服務。針對系列書籍購買進度難以追蹤的痛點設計，讓收藏者隨時透過手機查詢收藏狀態。目前已正式上線對外開放，未來預計擴展更多紀錄與收藏項目功能",
+        "en": "A mobile-first app for physical book collectors that makes it easy to track purchase progress across a series. It's live and open to the public, with more collection-tracking features planned."
+      },
+      "stack": ["Python", "FastAPI", "Node.js", "NestJS", "GitHub Actions", "ArgoCD", "Terraform", "Kubernetes", "Prometheus", "Grafana"]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "icon": "ti-stack-2",
+      "title": { "zh": "專案外包", "en": "Full-Stack Outsourcing" },
+      "desc": { "zh": "前後端到部署，完整專案一手包辦", "en": "End-to-end — frontend, backend, and deployment, all handled." }
+    },
+    {
+      "icon": "ti-server",
+      "title": { "zh": "後端外包", "en": "Backend Outsourcing" },
+      "desc": { "zh": "後端 API 開發與部署", "en": "Backend API development and deployment only." }
+    },
+    {
+      "icon": "ti-messages",
+      "title": { "zh": "技術交流", "en": "Tech Chat" },
+      "desc": { "zh": "只是想聊聊技術？也很歡迎", "en": "Just want to talk tech? Always welcome." }
+    }
+  ],
+  "cta": {
+    "title": { "zh": "一起做點有趣的事", "en": "Let's build something together" },
+    "desc": { "zh": "不管是什麼形式的合作，都歡迎找我聊聊", "en": "Whatever the collaboration looks like, feel free to reach out." },
+    "buttonLabel": { "zh": "寫信給我", "en": "Send a message" },
+    "email": "young94104@yahoo.com.tw"
+  }
+}
