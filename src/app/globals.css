@@ -1,33 +1,42 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css');
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
+*, *::before, *::after {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #F8F6F1;
+  --bg-card: #FFFFFF;
+  --text-primary: #2A1F14;
+  --text-secondary: #7A6555;
+  --text-muted: #A08060;
+  --text-date: #B09070;
+  --accent: #A0722A;
+  --accent-light: #FDF6E8;
+  --border: #E5E0D8;
+  --border-card: #DDD8CF;
+  --nav-bg: #C49A6C;
+  --nav-text: #5A3A1A;
+  --nav-text-active: #2A1A0A;
+  --cta-bg: #7A4E1A;
+  --skill-hover-border: #A0722A;
+  --skill-hover-text: #7A4E1A;
+  --skill-hover-bg: #FDF6E8;
+  --stack-pill-bg: #F3EFE8;
+  --stack-pill-text: #8A7060;
+  --section-label-color: #B09070;
+  --collab-icon: #C4A060;
+  --settings-lang-active: #7A4E1A;
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 a {
@@ -35,8 +44,8 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+@media print {
+  nav { display: none !important; }
+  #page-home { display: none !important; }
+  .no-print { display: none !important; }
 }
