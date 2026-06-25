@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { Suspense } from 'react'
 import './globals.css'
 import { LangProvider } from '@/hooks/useLang'
 import Navbar from '@/components/layout/Navbar'
@@ -13,7 +14,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="zh-TW">
       <body>
         <LangProvider>
-          <Navbar />
+          <Suspense>
+            <Navbar />
+          </Suspense>
           <main style={{ padding: '2.25rem 2.5rem 4rem', maxWidth: '780px', margin: '0 auto' }}>
             {children}
           </main>

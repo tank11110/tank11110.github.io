@@ -1,34 +1,38 @@
 'use client'
 
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+import { usePathname, useSearchParams } from 'next/navigation'
 import { useState } from 'react'
 import { useLang } from '@/hooks/useLang'
 import styles from './Navbar.module.css'
 
 export default function Navbar() {
   const pathname = usePathname()
+  const searchParams = useSearchParams()
   const { lang, setLang, t } = useLang()
   const [settingsOpen, setSettingsOpen] = useState(false)
 
   const isResume = pathname === '/resume' || pathname === '/resume/'
+  const isStandalone = searchParams.has('standalone')
 
   return (
     <nav className={styles.nav}>
-      <div className={styles.tabs}>
-        <Link
-          href="/home"
-          className={`${styles.tab} ${!isResume ? styles.active : ''}`}
-        >
-          {t({ zh: '首頁', en: 'Home' })}
-        </Link>
-        <Link
-          href="/resume"
-          className={`${styles.tab} ${isResume ? styles.active : ''}`}
-        >
-          {t({ zh: '履歷', en: 'Resume' })}
-        </Link>
-      </div>
+      {!isStandalone && (
+        <div className={styles.tabs}>
+          <Link
+            href="/home"
+            className={`${styles.tab} ${!isResume ? styles.active : ''}`}
+          >
+            {t({ zh: '首頁', en: 'Home' })}
+          </Link>
+          <Link
+            href="/resume"
+            className={`${styles.tab} ${isResume ? styles.active : ''}`}
+          >
+            {t({ zh: '履歷', en: 'Resume' })}
+          </Link>
+        </div>
+      )}
 
       <div className={styles.right}>
         {isResume && (
