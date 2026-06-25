@@ -4,7 +4,7 @@ export interface LocalizedString {
 }
 
 export interface AboutData {
-  name: string
+  name: LocalizedString
   role: string
   desc: LocalizedString
   contact: {

@@ -9,7 +9,7 @@ export default function AboutSection() {
   return (
     <section className={styles.section}>
       <div className={styles.label}>ABOUT</div>
-      <h1 className={styles.name}>{name}</h1>
+      <h1 className={styles.name}>{t(name)}</h1>
       <p className={styles.role}>{role}</p>
       <p className={styles.desc}>{t(desc)}</p>
       <div className={styles.contactRow}>
